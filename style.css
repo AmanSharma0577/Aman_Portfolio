@@ -164,7 +164,17 @@
 /* Make anchor jumps stop below the navbar */
 .section{ scroll-margin-top: calc(var(--nav-h) + 12px); }
 
+@media (max-width: 991.98px) { /* applies below lg breakpoint */
+  .navbar-collapse {
+    background-color: #f8f9fa; /* Bootstrap's light gray */
+    padding: 1rem;
+    border-radius: 0 0 0.5rem 0.5rem; /* optional rounded bottom */
+  }
 
+  .navbar-nav .nav-link {
+    color: #0e2a47; /* your --ink variable color */
+  }
+}
 
 
 /* ===== About styles (uses your theme tokens) ===== */
